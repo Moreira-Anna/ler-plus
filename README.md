@@ -18,7 +18,7 @@ Promover o incentivo à leitura e auxiliar os leitores a descobrir obras que des
 ## 📖 Descrição do Projeto
 O **Ler +** é uma aplicação **front-end** que cria um **clube de livros online**, permitindo que usuários:  
 - 📖 Leiam **resumos de livros**  
-- ⭐ Avaliem obras com **notas de 0 a 10**  
+- ⭐ Avaliem obras com **notas de 0 a 5**  
 - ✍️ Postem **resumos próprios**, compartilhando impressões  
 - 🎨 Naveguem em uma interface **intuitiva e agradável**, com cabeçalho, rodapé, menus, ícones, cores e fontes bem definidas  
 
@@ -33,13 +33,13 @@ O **Ler +** é uma aplicação **front-end** que cria um **clube de livros onlin
 ## 🔨 Funcionalidades
 - Cadastro e login de usuários  
 - Postagem de resumos de livros  
-- Sistema de avaliação de 0 a 10  
+- Sistema de avaliação de 0 a 5
 - Navegação intuitiva com menu, cabeçalho e rodapé  
 - Uso de cores e fontes para melhor usabilidade  
 
 ## 🛠️ Tecnologias Utilizadas
-- **HTML5**  
-- **CSS3**  
+- **HTML**  
+- **CSS**  
 - **JavaScript**  
 
 ## 🚀 Como Acessar o Projeto
