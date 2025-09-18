@@ -1,4 +1,4 @@
-# 📚 Ler + – Clube de Livros Online
+# 📚 Ler + 
 
 <p align="center">
   <img src="Logo/logoLERplus.png" alt="Ler + Logo" width="300"/>
