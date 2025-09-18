@@ -45,4 +45,4 @@ O **Ler +** é uma aplicação **front-end** que cria um **clube de livros onlin
 ## 🚀 Como Acessar o Projeto
 1. Clone o repositório:  
    ```bash
-   git clone https://github.com/SEU-USUARIO/ler-mais.git
+   git clone  https://moreira-anna.github.io/ler-plus/
