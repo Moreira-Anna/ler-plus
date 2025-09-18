@@ -1,7 +1,7 @@
 # 📚 Ler + – Clube de Livros Online
 
 <p align="center">
-  <img src="link-da-sua-imagem-ou-logo.png" alt="Ler + Logo" width="300"/>
+  <img src="logo/logoLERplus.png" alt="Ler + Logo" width="300"/>
 </p>
 
 <p align="center">
