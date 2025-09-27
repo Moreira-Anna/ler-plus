@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="lado-esquerdo">
+      <img src="img/Cad.png">
+    </div>
+
+    <div class="lado-direito">
+      <form  action="Login.html" method="get">
+        <h2 class="titulo-form">Cadastro</h2>
+
+        <label for="username">Nome:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="email">E-mail:</label>
+        <input type="text" id="email" name="email" placeholder="Insira um email válido" required>
+
+        <label for="Conteúdo">Conteúdo de maior interesse:</label>
+        <select id="Conteúdo" name="Conteúdo" required>
+          <option value="">Selecione...</option>
+          <option value="Clássico">Clássico</option>
+          <option value="Romance">Romance</option>
+          <option value="conto">Conto</option>
+          <option value="Fantasia">Fantasia</option>
+          <option value="suspense">Suspense</option>
+          <option value="Terror">Terror</option>
+          <option value="ficção científica">Ficção científica</option>
+        </select>
+
+   
+        <label for="pwd">Senha:</label>
+        <input type="password" id="pwd" name="pwd" required>
+
+        <input type="submit" value="Enviar" >
+        
+      </form>
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2025 Clube do Livro. Todos os direitos reservados.</p>
+    <p>
+      <a href="#">Início</a> |
+      <a href="#">Catálogo</a> |
+      <a href="#">Eventos</a> |
+      <a href="#">Contato</a>
+    </p>
+  </footer>
+</body>
+
+</html>
