@@ -13,6 +13,9 @@ body {
   display: flex;
   flex: 1;
   background-color: #000;
+  width: 90%;   
+  max-width: 1200px;
+  margin: 0 auto; /* centraliza no desktop */
 }
 
 .lado-esquerdo img {
@@ -22,6 +25,12 @@ body {
   display: block;
 }
 
+.lado-direito {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 form {
   width: 100%;
@@ -54,13 +63,6 @@ textarea {
   color: #fff;
 }
 
-.lado-direito {
-  flex: 1;
-  display: flex;
-  align-items: center;
-}
-
-
 input[type="submit"] {
   background-color: #933e96;
   color: white;
@@ -76,7 +78,6 @@ footer {
   text-align: center;
   padding: 15px;
 }
-
 
 footer a:hover {
   text-decoration: underline;
@@ -107,4 +108,20 @@ img {
 }
 .link-cadastrar {
   text-align: center; /* centraliza o conteúdo dentro do <p> */
+}
+
+/* 📱 Responsividade */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* imagem em cima, form embaixo */
+    width: 100%;
+  }
+
+  .lado-esquerdo img {
+    height: auto; /* deixa a imagem se ajustar automaticamente */
+  }
+
+  .lado-direito {
+    padding: 20px;
+  }
 }
