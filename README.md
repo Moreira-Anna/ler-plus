@@ -39,12 +39,12 @@ O **Ler +** é uma aplicação **front-end** que cria um **clube de livros onlin
 - Uso de cores e fontes para melhor usabilidade  
 
 ## 🛠️ Tecnologias Utilizadas
-- **HTML5**  
-- **CSS3**  
-- **JavaScript**  
+- **HTML**  
+- **CSS**  
 
 ## 🚀 Como Acessar o Projeto
 1. Clone o repositório:  
    ```bash
    git clone  https://moreira-anna.github.io/ler-plus/
+
 
