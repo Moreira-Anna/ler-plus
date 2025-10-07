@@ -10,16 +10,15 @@
 
 <body>
 
-    <img src="img/logoLERplus.png">
-    </div>
+    <img src="img/logoLERplus.png" >
 
     <div class="formlog">
-        <form id ="formLogin">
+        <form id="formLogin">
+            
             <h1 class="titulo-form">Login</h1>
 
             <label for="email">E-mail:</label>
             <input type="text" id="email" name="email" placeholder="Insira um email válido" required>
-
 
             <label for="pwd">Senha:</label>
             <input type="password" id="pwd" name="pwd" required>
@@ -33,8 +32,6 @@
         </form>
     </div>
 
-
-    <!-- Rodapé -->
     <footer>
         <p>&copy; 2025 LerPlus. Todos os direitos reservados.</p>
         <p>
@@ -42,31 +39,30 @@
             <a href="#">Contato</a>
         </p>
     </footer>
+
     <script>
-    // Espera o carregamento completo da página
-    document.addEventListener("DOMContentLoaded", () => {
+      document.addEventListener("DOMContentLoaded", () => {
+        const form = document.querySelector("#formLogin");
+        const emailInput = document.querySelector("#email");
+        const senhaInput = document.querySelector("#pwd");
 
-      const form = document.querySelector("#formLogin");
-      const emailInput = document.querySelector("#email");
-      const senhaInput = document.querySelector("#pwd");
+        form.addEventListener("submit", (event) => {
+          event.preventDefault(); 
 
-      form.addEventListener("submit", (event) => {
-        event.preventDefault(); // Impede o envio automático
+          const email = emailInput.value.trim();
+          const senha = senhaInput.value.trim();
 
-        const email = emailInput.value.trim();
-        const senha = senhaInput.value.trim();
+          if (email === "" || senha === "") {
+            alert("Por favor, preencha todos os campos!");
+            return;
+          }
 
-        if (email === "" || senha === "") {
-          alert("Por favor, preencha todos os campos!");
-          return;
-        }
-
-        // Redireciona para a página de início
-        window.location.href = "inicio.html";
+          // Redireciona para a página de início
+          window.location.href = "inicio.html";
+        });
       });
+    </script>
 
-    });
-  </script>
 </body>
 
 </html>
