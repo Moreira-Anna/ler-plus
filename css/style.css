@@ -1,4 +1,3 @@
-/* Configurações gerais do body e fonte padrão, cores e flex para layout */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -9,7 +8,6 @@ body {
   color: #fff;
 }
 
-/* Container centralizado para lado esquerdo/direito */
 .container {
   display: flex;
   flex: 1;
@@ -19,7 +17,6 @@ body {
   margin: 0 auto;
 }
 
-/* Imagem da lateral esquerda */
 .lado-esquerdo img {
   width: 100%;
   height: 98vh;
@@ -27,7 +24,6 @@ body {
   display: block;
 }
 
-/* Área do lado direito centralizada vertical e horizontalmente */
 .lado-direito {
   flex: 1;
   display: flex;
@@ -35,20 +31,17 @@ body {
   justify-content: center;
 }
 
-/* Formulário: largura total e padding interno */
 form {
   width: 100%;
   padding: 20px;
   color: #fff;
 }
 
-/* Título do formulário centralizado e cor personalizada */
 .titulo-form {
   text-align: center;
   color: #933e96;
 }
 
-/* Labels do formulário: negrito e espaçamento */
 label {
   font-weight: bold;
   display: block;
@@ -56,7 +49,6 @@ label {
   color: #fff;
 }
 
-/* Inputs, selects e textarea: largura total, padding e cores */
 input,
 select,
 textarea {
@@ -70,7 +62,6 @@ textarea {
   color: #fff;
 }
 
-/* Botão submit: cor, cursor, transição e destaque */
 input[type="submit"] {
   background-color: #933e96;
   color: white;
@@ -78,9 +69,11 @@ input[type="submit"] {
   cursor: pointer;
   font-weight: bold;
   transition: 0.3s;
+  width: 150px; 
+   margin: 10px 150px; 
+   
 }
 
-/* Rodapé: cores, centralização do texto e padding */
 footer {
   background-color: #111;
   color: #fff;
@@ -91,13 +84,11 @@ footer {
   
 }
 
-/* Links do rodapé com hover */
 footer a:hover {
   text-decoration: underline;
   color: white;
 }
 
-/* Imagens padrão: centralizadas e tamanho definido */
 img {
   display: block;
   margin: 0 auto;
@@ -105,45 +96,38 @@ img {
   height: 250px;
 }
 
-/* Caixa de login: largura máxima, centralizada e cor */
 .formlog {
   width: 100%;
   max-width: 400px;
   margin: 20px auto;
   padding: 20px;
-  color: #fff;
+  color: #a155a1;
   border-radius: 8px;
   margin-top: -30px;
 }
 
-/* Links de cadastro centralizados e com estilo */
 .link-cadastrar a {
   text-align: center;
   color: #a155a1;
-  font-weight: bold;
+  font-weight: bold; 
+    width: 150px; 
+   margin: 10px 150px;
+  
 }
 
 .link-cadastrar {
   text-align: center;
+  
+   margin: 20px 40px; 
 }
 
-/* Responsividade geral: container, imagens e área direita */
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
     width: 100%;
   }
-
-  .lado-esquerdo img {
-    height: auto;
-  }
-
-  .lado-direito {
-    padding: 20px;
-  }
 }
 
-/* ------------------- Cabeçalho ------------------- */
 header {
   background-color: #F7F4F9	;
   color: #615e5b;
@@ -152,11 +136,7 @@ header {
   align-items: center;
   padding: 5px 10px;
 }
-header .logo-titulo {
-  display: flex;
-  align-items: center;
-  gap: 2px;
-}
+
 
 header .logo {
   width: 80px;
@@ -168,7 +148,6 @@ header h1 {
   font-size: 1.5rem;
 }
 
-/* ------------------- Títulos principais ------------------- */
 h2 {
   background-color: #F7F4F9		;
   color: #615e5b;
@@ -179,7 +158,6 @@ h2 {
   font-size: 20px;
 }
 
-/* ------------------- Menu de navegação ------------------- */
 header nav ul {
   list-style: none;
   display: flex;
@@ -188,29 +166,24 @@ header nav ul {
   padding: 0;
 }
 
-/* Links do menu: cor, sem sublinhado e negrito */
 header nav ul li a {
   color: #615e5b;
   text-decoration: none;
   font-weight: bold;
 }
 
-/* Hover dos links: muda cor e sublinhado */
 header nav ul li a:hover {
   color: #fff;
   text-decoration: underline;
 }
 
-/* ------------------- Responsividade do header ------------------- */
 @media (max-width: 768px) {
   header {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  header .logo-titulo {
-    margin-bottom: 10px;
-  }
+
 
   header nav ul {
     flex-direction: column;
@@ -223,20 +196,17 @@ header nav ul li a:hover {
   }
 }
 
-/* ------------------- Página específica ------------------- */
-/* Cor de fundo e texto para página "inicio" */
+
 body.inicio {
   background-color: 	#EEE9E5	;
   color: #615e5b;
 }
 
-/* Imagem específica "ini" largura total */
 img.ini {
   width: 100%;
 }
 
-/* ------------------- Fonte personalizada ------------------- */
-/* Importa fonte local */
+
 @font-face {
   font-family: "LibreBaskerville";
   src: url("fonte/LibreBaskerville-Bold.ttf") format("truetype");
@@ -244,19 +214,17 @@ img.ini {
   font-style: normal;
 }
 
-/* ------------------- Caixas de destaque ------------------- */
-/* Container das caixas: flex, espaçamento, alinhamento e responsividade */
 .destaques {
     display: flex;
     justify-content: center;
-    gap: 20px;         /* Espaço entre os destaques */
-    flex-wrap: wrap;   /* Faz com que caia para a linha de baixo se a tela for pequena */
+    gap: 20px;        
+    flex-wrap: wrap;   
     margin: 40px 0;
 }
 
 .caixa-destaque {
     position: relative;
-    width: 200px;      /* Largura fixa para cada destaque */
+    width: 200px;      
     cursor: pointer;
 }
 
@@ -285,13 +253,4 @@ img.ini {
 
 .caixa-destaque:hover .overlay {
     opacity: 1;
-}
-
-.overlay::-webkit-scrollbar {
-    width: 6px;
-}
-
-.overlay::-webkit-scrollbar-thumb {
-    background-color: rgba(255,255,255,0.3);
-    border-radius: 3px;
 }

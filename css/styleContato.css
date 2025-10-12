@@ -1,6 +1,7 @@
 /* Reset e estilo base */
 body {
     font-family: Arial, sans-serif;
+    line-height: 1.6;
     background-color: #f4f6f9;
     margin: 0;
     padding: 0;
@@ -9,95 +10,116 @@ body {
     flex-direction: column;
 }
 
-/* Container principal: imagem + formulário */
-.container {
+.container_c {
     display: flex;
+    max-width: 1000px;
+    margin: 40px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgb(0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+
+.perfil {
     flex: 1;
-    min-height: 100vh; /* garante altura total da tela */
-}
-
-/* Lado esquerdo: imagem */
-.lado-esquerdo {
-    width: 50%; /* metade da tela */
+    background-color: #cfadd9;
+    color: #ecf0f1;
+    padding: 40px 30px;
     display: flex;
-    align-items: stretch;  /* imagem ocupa toda altura */
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
-.lado-esquerdo img {
+.perfil h1 {
+    font-size: 1em;
+    margin: 0;
+    color: #0a0a0a;
+}
+
+.perfil h2 {
+    font-size: 1.2em;
+    margin-top: 30px;
+    border-bottom: 2px solid #cfadd9;
+    padding-bottom: 5px;
     width: 100%;
-    height: 100%;         /* ocupa altura total do lado esquerdo */
-    object-fit: cover;    /* mantém proporção e cobre o espaço */
-    display: block;
+    color: #0a0a0a;
 }
 
-/* Lado direito: formulário */
-.lado-direito {
-    width: 50%;
-    display: flex;
-    align-items: center;  /* centraliza verticalmente */
-    justify-content: center; /* centraliza horizontalmente */
-    padding: 40px;
-}
-
-form {
-    background: white;
-    width: 100%;
-    max-width: 400px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Título do formulário */
-.titulo-form {
-    text-align: center;
-    color: #0077cc;
-}
-
-label {
+.perfil p {
     font-weight: bold;
+    margin-bottom: 20px;
 }
 
-input,
-select,
-textarea {
+.perfil ul {
+    list-style: none;
+    padding: 0;
     width: 100%;
-    margin-bottom: 12px;
-    padding: 8px;
-    border-radius: 6px;
-    border: 1px solid #ccc;
 }
 
-input[type="submit"] {
-    background-color: #0077cc;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    transition: 0.3s;
+.perfil li {
+    margin-bottom: 10px;
+    text-align: left;
+    color: #0a0a0a;
 }
 
-input[type="submit"]:hover {
-    background-color: #005fa3;
-}
-
-/* Rodapé */
-footer {
-    margin-top: auto;
-    background-color: #222;
-    color: #ccc;
-    text-align: center;
-    padding: 15px;
-}
-
-footer a {
-    color: #66b3ff;
-    margin: 0 10px;
+.perfil a {
+    color: #740160;
     text-decoration: none;
 }
+ .main-content{
+    flex:2;
+    padding: 40px 50px ;
+ }
 
-footer a:hover {
-    text-decoration: underline;
-    color: white;
+.main-content section{
+    margin-bottom: 30px;
+}
+
+.main-content h2{
+    font-size: 1.5em;
+    color: #cfadd9
+}
+
+.item-experiencia,
+.item-educacao {
+    margin-bottom: 20px;
+}
+
+.item-experiencia h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #2980b9;
+}
+
+.periodo {
+    font-style: italic;
+    color: #7f8c8d;
+    margin: 5px 0;
+}
+
+.item-experiencia ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .curriculo-container {
+        flex-direction: column;
+        /* Em telas menores, as colunas se empilham */
+    }
+
+    .perfil-info {
+        padding: 30px 20px;
+        border-bottom: 5px solid #2c3e50;
+    }
+
+    .perfil-info h1 {
+        font-size: 1.5em;
+    }
+
+    .main-content {
+        padding: 30px 20px;
+    }
 }
