@@ -330,7 +330,6 @@ textarea::placeholder {
   font-weight: bold;
   text-align: center;
 }
-/* Cada publicação dentro do mural */
   .post {
     background-color: #ffffff;
     border: 1px solid #ccc;
@@ -349,7 +348,6 @@ textarea::placeholder {
   }
 
 
-/* Mural ocupa todo o espaço restante */
 .mural {
   flex: 1; 
   background-color: white;
