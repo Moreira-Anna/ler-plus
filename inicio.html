@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="index">
+<body>
 
     <header>
         <header>
@@ -19,26 +18,51 @@
 
         <nav>
             <ul>
-                <li><a href="inicio.html">Início</a> </li>
-                <li><a href="#">Sobre</a> </li>
-                <li><a href="contato.html">Contato</a></li>
+                <li><a href="index.html"> Início</a> </li>
+                <li><a href="criar.html">Publicar</a> </li>
             </ul>
 
 
         </nav>
 
     </header>
+    <h2>Seu Feed</h2>
+
+    <div class="search-bar">
+        <input type="search" placeholder="Pesquise aqui : GENERO OU AUTOR" name="q">
+        <button type="submit">Buscar</button>
+    </div>
 
 
-    <h2>Bem-vindo ao LerPlus!</h2>
 
-
-
-    <img src="img/inicio.png" class="ini">
-
-        <h2>Aqui você encontrara resumos de livros, facilitanto sua escolha de proxima leitura</h2>
-        
     <div class="destaques">
+        <div class="caixa-destaque">
+            <div class="overlay">
+                <p>Resumo 1: Exemplo de publicação.
+                    O livro conta a história verídica de um serial killer que assombrou
+                    San Francisco no final da década de 1960 e início da década de 1970,
+                    conhecido como Zodíaco. O próprio assassino se autonomeou. Esse é um relato
+                    do cartunista de política do maior jornal do norte da Califórnia, o San Francisco
+                    Chronicle, Robert Graysmith. O autor estava lá quando cada uma das cartas criptografadas,
+                    cada mensagem codificada, cada farrapo de roupa ensanguentada das vítimas chegou à redação.
+                </p>
+            </div>
+            <img src="img/ex.png" alt="Imagem exemplo">
+        </div>
+
+        <div class="caixa-destaque">
+            <img src="img/destaq3.png" alt="Capa do livro">
+            <div class="overlay">
+                <h3>Arsène Lupin</h3>
+                <p>Quando a criatura supera o criador, há que se valorizar o poder de um personagem. Esse é ocaso de
+                    Arsène Lupin, o charmoso ladrão que se tornou mais famoso que o próprio autor de suas aventuras,
+                    Maurice Leblanc. Nesta obra – a primeira da série de aventuras de Lupin –, Leblanc desempenha o
+                    papel de narrador, fazendo com que suas emoções se tornem as nossas e suas paixões se estendam a
+                    nós, instigando, a todo momento, a curiosidade dos leitores.</p>
+                <p>Gênero: Ficção Científica</p>
+            </div>
+        </div>
+
         <div class="caixa-destaque">
             <img src="img/destaq1.png" alt="Capa do livro">
             <div class="overlay">
@@ -66,23 +90,13 @@
                 <p>Gênero: Biografias </p>
             </div>
         </div>
-
-        <div class="caixa-destaque">
-            <img src="img/destaq3.png" alt="Capa do livro">
-            <div class="overlay">
-                <h3>Arsène Lupin</h3>
-                <p>Quando a criatura supera o criador, há que se valorizar o poder de um personagem. Esse é ocaso de
-                    Arsène Lupin, o charmoso ladrão que se tornou mais famoso que o próprio autor de suas aventuras,
-                    Maurice Leblanc. Nesta obra – a primeira da série de aventuras de Lupin –, Leblanc desempenha o
-                    papel de narrador, fazendo com que suas emoções se tornem as nossas e suas paixões se estendam a
-                    nós, instigando, a todo momento, a curiosidade dos leitores.</p>
-                <p>Gênero: Ficção Científica</p>
-            </div>
-        </div>
     </div>
-    <section class="formlog">
-  <input type="submit" value="Login" onclick="window.location.href='login.html'">
-    </section>
+
+
+
+
+
+
     <footer>
         <p>&copy; LerPlus Todos os direitos reservados.</p>
         <p>
@@ -90,6 +104,8 @@
             <a href="contato.html">Contato</a>
         </p>
     </footer>
+
+
 </body>
 
 </html>

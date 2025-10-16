@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<body>
+    <header>
+        <header>
+            <img src="img/logoLERplus.png" alt="LerPlus" class="logo">
+            <h1>LerPlus</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html"> Início</a> </li>
+                <li><a href="inicio.html">Feed</a> </li>
+            </ul>
+
+
+        </nav>
+
+    </header>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LerPlus</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <div class="mural">
+        <div class="post-box">
+            <h2>Qual resumo gostaria de compartilhar hoje?</h2>
+            <textarea id="resumo" placeholder="Escreva aqui seu resumo..."></textarea>
+            <label for="Conteúdo">Genero do livro</label>
+            <select id="Conteúdo" name="Conteúdo" required>
+                <option value="">Selecione...</option>
+                <option value="Clássico">Clássico</option>
+                <option value="Romance">Romance</option>
+                <option value="conto">Conto</option>
+                <option value="Fantasia">Fantasia</option>
+                <option value="suspense">Suspense</option>
+                <option value="Terror">Terror</option>
+                <option value="ficção científica">Ficção científica</option>
+            </select>
+            <label for="imageInput" class="btn-upload">Escolher Imagem</label>
+            <input type="file" class="btn-upload" id="imageInput" accept="image/*">
+            <button type="button" class="btn" onclick="publicar()">Publicar</button>
+        </div>
+
+        
+
+
+
+    <footer>
+        <p>&copy; LerPlus Todos os direitos reservados.</p>
+        <p>
+            <a href="index.html">Início</a> |
+            <a href="contato.html">Contato</a>
+        </p>
+    </footer>
+
+
+</body>
+
+</html>

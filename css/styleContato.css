@@ -1,4 +1,3 @@
-/* Reset e estilo base */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -103,11 +102,9 @@ body {
     padding-left: 20px;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     .curriculo-container {
         flex-direction: column;
-        /* Em telas menores, as colunas se empilham */
     }
 
     .perfil-info {

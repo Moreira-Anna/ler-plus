@@ -2,65 +2,65 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <img src="img/logoLERplus.png" >
+  <img src="img/logoLERplus.png">
 
-    <div class="formlog">
-        <form id="formLogin">
+  <div class="formlog">
+    <form id="formLogin">
 
-            <h1 class="titulo-form">Login</h1>
+      <h1 class="titulo-form">Login</h1>
 
-            <label for="email">E-mail:</label>
-            <input type="text" id="email" name="email" placeholder="Insira um email válido" required>
+      <label for="email">E-mail:</label>
+      <input type="text" id="email" name="email" placeholder="Insira um email válido" required>
 
-            <label for="pwd">Senha:</label>
-            <input type="password" id="pwd" name="pwd" required>
+      <label for="pwd">Senha:</label>
+      <input type="password" id="pwd" name="pwd" required>
+      <p class="link"><a href="#">esqueceu a senha?</a></p>
+      <input type="submit" value="Entrar">
 
-            <input type="submit" value="Entrar">
+      <p class="link-cadastrar">
+        <a href="Cadastro.html">Cadastrar</a>
+      </p>
 
-            <p class="link-cadastrar">
-                <a href="Cadastro.html">Cadastrar</a>
-            </p>
+    </form>
+  </div>
 
-        </form>
-    </div>
+  <footer>
+    <p>&copy; 2025 LerPlus. Todos os direitos reservados.</p>
+    <p>
+      <a href="index.html">Início</a> |
+      <a href="contato.html">Contato</a>
+    </p>
+  </footer>
 
-    <footer>
-        <p>&copy; 2025 LerPlus. Todos os direitos reservados.</p>
-        <p>
-            <a href="index.html">Início</a> |
-            <a href="contato.html">Contato</a>
-        </p>
-    </footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const form = document.querySelector("#formLogin");
+      const emailInput = document.querySelector("#email");
+      const senhaInput = document.querySelector("#pwd");
 
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const form = document.querySelector("#formLogin");
-        const emailInput = document.querySelector("#email");
-        const senhaInput = document.querySelector("#pwd");
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
 
-        form.addEventListener("submit", (event) => {
-          event.preventDefault(); 
+        const email = emailInput.value.trim();
+        const senha = senhaInput.value.trim();
 
-          const email = emailInput.value.trim();
-          const senha = senhaInput.value.trim();
+        if (email === "" || senha === "") {
+          alert("Por favor, preencha todos os campos!");
+          return;
+        }
 
-          if (email === "" || senha === "") {
-            alert("Por favor, preencha todos os campos!");
-            return;
-          }
-
-          window.location.href = "inicio.html";
-        });
+        window.location.href = "inicio.html";
       });
-    </script>
+    });
+  </script>
 
 </body>
 
