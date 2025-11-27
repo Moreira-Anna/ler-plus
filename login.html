@@ -20,9 +20,9 @@
       <label for="email">E-mail:</label>
       <input type="text" id="email" name="email" placeholder="Insira um email válido" required>
 
-      <label for="pwd">Senha:</label>
-      <input type="password" id="pwd" name="pwd" required>
-      <p class="link"><a href="#">esqueceu a senha?</a></p>
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" name="senha" required>
+      <p class="link"><a href="redefinirSenha.html">esqueceu a senha?</a></p>
       <input type="submit" value="Entrar">
 
       <p class="link-cadastrar">
@@ -39,28 +39,7 @@
       <a href="contato.html">Contato</a>
     </p>
   </footer>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const form = document.querySelector("#formLogin");
-      const emailInput = document.querySelector("#email");
-      const senhaInput = document.querySelector("#pwd");
-
-      form.addEventListener("submit", (event) => {
-        event.preventDefault();
-
-        const email = emailInput.value.trim();
-        const senha = senhaInput.value.trim();
-
-        if (email === "" || senha === "") {
-          alert("Por favor, preencha todos os campos!");
-          return;
-        }
-
-        window.location.href = "inicio.html";
-      });
-    });
-  </script>
+  <script src="js/login.js"></script>
 
 </body>
 
