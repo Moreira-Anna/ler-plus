@@ -254,6 +254,7 @@ header nav ul li a:hover {
   opacity: 0;
   transition: opacity 0.3s ease;
   overflow-y: auto;
+  
 }
 
 .caixa-destaque:hover .overlay {
@@ -349,7 +350,7 @@ textarea::placeholder {
     border-radius: 10px;
     padding: 10px;
     margin-bottom: 10px;
-  width: 400px; /* largura fixa da caixa */
+  width: 400px; 
 }
 
   
@@ -368,6 +369,12 @@ textarea::placeholder {
   border: 2px solid #933e96;
   border-radius: 15px;
   overflow-y: auto; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;      
+    min-height: 80vh;         
+
+
 }
 .post-box label {
     display: block;
@@ -394,4 +401,23 @@ textarea::placeholder {
   height: auto;
   border-radius: 10px;
   box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+#detalheBox .overlay {
+    opacity: 1;         
+    position: relative; 
+    height: auto;       
+    overflow: visible;  
+}
+.pagina-detalhes {
+    background-color: #fff; 
+    color: #000; 
+}
+#Autor {
+    width:95%;       
+    height: 40px;     
+    background-color: #933e96;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
 }

@@ -21,19 +21,16 @@
                 <li><a href="index.html"> Início</a> </li>
                 <li><a href="criar.html">Publicar</a> </li>
             </ul>
-
-
         </nav>
 
     </header>
+
     <h2>Seu Feed</h2>
 
     <div class="search-bar">
-        <input type="search" placeholder="Pesquise aqui : GENERO OU AUTOR" name="q">
-        <button type="submit">Buscar</button>
+        <input type="search" placeholder="Pesquise aqui : GENERO " name="q" id="campoBusca">
+        <button id="btnBuscar">Buscar</button>
     </div>
-
-
 
     <div class="destaques">
         <div class="caixa-destaque">
@@ -41,10 +38,7 @@
                 <p>Resumo 1: Exemplo de publicação.
                     O livro conta a história verídica de um serial killer que assombrou
                     San Francisco no final da década de 1960 e início da década de 1970,
-                    conhecido como Zodíaco. O próprio assassino se autonomeou. Esse é um relato
-                    do cartunista de política do maior jornal do norte da Califórnia, o San Francisco
-                    Chronicle, Robert Graysmith. O autor estava lá quando cada uma das cartas criptografadas,
-                    cada mensagem codificada, cada farrapo de roupa ensanguentada das vítimas chegou à redação.
+                    conhecido como Zodíaco. O próprio assassino se autonomeou...
                 </p>
             </div>
             <img src="img/ex.png" alt="Imagem exemplo">
@@ -54,11 +48,7 @@
             <img src="img/destaq3.png" alt="Capa do livro">
             <div class="overlay">
                 <h3>Arsène Lupin</h3>
-                <p>Quando a criatura supera o criador, há que se valorizar o poder de um personagem. Esse é ocaso de
-                    Arsène Lupin, o charmoso ladrão que se tornou mais famoso que o próprio autor de suas aventuras,
-                    Maurice Leblanc. Nesta obra – a primeira da série de aventuras de Lupin –, Leblanc desempenha o
-                    papel de narrador, fazendo com que suas emoções se tornem as nossas e suas paixões se estendam a
-                    nós, instigando, a todo momento, a curiosidade dos leitores.</p>
+                <p>Quando a criatura supera o criador... </p>
                 <p>Gênero: Ficção Científica</p>
             </div>
         </div>
@@ -67,11 +57,7 @@
             <img src="img/destaq1.png" alt="Capa do livro">
             <div class="overlay">
                 <h3>O Senhor dos Anéis</h3>
-                <p>O Senhor dos Anéis: A Sociedade do Anel” marca o término da primeira parte da jornada épica dos
-                    personagens e prepara o cenário para as aventuras subsequentes. Após enfrentarem muitos desafios e
-                    perigos ao longo da jornada até Valfenda, a Sociedade do Anel se desfaz. Frodo e Sam, acompanhados
-                    por Gollum, continuam sua jornada em direção à Montanha da Perdição, enquanto os outros membros da
-                    sociedade seguem caminhos separados para enfrentar suas próprias missões e perigos.</p>
+                <p>"A Sociedade do Anel” marca o término...</p>
                 <p>Gênero: Fantasia</p>
             </div>
         </div>
@@ -79,23 +65,14 @@
         <div class="caixa-destaque">
             <img src="img/destaq2.png" alt="Capa do livro">
             <div class="overlay">
-                <h3> Lady Killers </h3>
-                <p> Quando pensamos em assassinos em série, pensamos em homens. Mais precisamente, em homens matando
-                    mulheres inocentes, vítimas de um apetite atroz por sangue e uma vontade irrefreável de carnificina.
-                    As mulheres podem ser tão letais quanto os homens e deixar um rastro de corpos por onde passam
-                    então o que acontece quando as pessoas são confrontadas com uma assassina em série? Quando as ideias
-                    de “sexo frágil” se quebram e fitamos os desconcertantes olhos de uma mulher com sangue seco sob as
-                    unhas?
-                </p>
-                <p>Gênero: Biografias </p>
+                <h3>Lady Killers</h3>
+                <p>Mulheres também podem ser tão letais quanto homens...</p>
+                <p>Gênero: Biografias</p>
             </div>
         </div>
     </div>
-
-
-
-
-
+    <h2>Publicações dos Usuários</h2>
+    <div class="destaques" id="feed"></div>
 
     <footer>
         <p>&copy; LerPlus Todos os direitos reservados.</p>
@@ -105,6 +82,7 @@
         </p>
     </footer>
 
+   <script src="js/inicio.js"></script>
 
 </body>
 
