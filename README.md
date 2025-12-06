@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/static/v1?label=STATUS&message=EM%20CONCLUIDO&color=GREEN&style=for-the-badge"/>
+  <img src="https://img.shields.io/static/v1?label=STATUS&message=%20CONCLUIDO&color=GREEN&style=for-the-badge"/>
 </p>
 
 ## 👩‍💻 Integrante da Equipe
